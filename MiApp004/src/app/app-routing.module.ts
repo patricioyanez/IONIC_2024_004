@@ -8,12 +8,24 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'menu',
     pathMatch: 'full'
   },
   {
     path: 'uno',
     loadChildren: () => import('./uno/uno.module').then( m => m.UnoPageModule)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+  },
+  {
+    path: 'dos',
+    loadChildren: () => import('./dos/dos.module').then( m => m.DosPageModule)
+  },
+  {
+    path: 'tres',
+    loadChildren: () => import('./tres/tres.module').then( m => m.TresPageModule)
   },
 ];
 

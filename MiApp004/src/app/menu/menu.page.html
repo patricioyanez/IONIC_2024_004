@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Menú</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    
+    <ion-list-header color="primary">
+      <ion-label>Menú de app</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-button [routerLink]="['/uno']">Página uno: lista y botones</ion-button>
+    </ion-item>
+    
+    <ion-item>
+      <ion-button [routerLink]="['/dos']">Página dos: boton back</ion-button>
+    </ion-item>
+
+    <ion-item>
+      <a href="/tres">Ver input's</a>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
