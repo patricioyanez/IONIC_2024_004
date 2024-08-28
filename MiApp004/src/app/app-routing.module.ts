@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'tres',
     loadChildren: () => import('./tres/tres.module').then( m => m.TresPageModule)
   },
+  {
+    path: 'cuatro',
+    loadChildren: () => import('./cuatro/cuatro.module').then( m => m.CuatroPageModule)
+  },
 ];
 
 @NgModule({

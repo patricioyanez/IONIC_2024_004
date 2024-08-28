@@ -21,6 +21,8 @@
   <ion-input type="email" placeholder="Ingrese correo" label="Correo 2" labelPlacement="floating">    
   </ion-input>
 
+  <ion-input type="email" placeholder="Ingrese correo" label="Correo 2" labelPlacement="fixed">    
+  </ion-input>
   
   <ion-input type="email" placeholder="Ingrese correo" label="Correo 3" labelPlacement="floating"
       helperText="Ingrese un correo adicional"
@@ -28,6 +30,11 @@
       ngModel email>    
   </ion-input>
 
-  
+  <ion-input type="text" placeholder="Carrera" label="Carrera" [clearInput]="true"></ion-input>
+  <ion-input type="text" placeholder="Obs." label="Observaciones" [counter]="true" maxlength="30"></ion-input>
 
+  <ion-input type="number" label="Valor Mensual" fill="solid"></ion-input>
+  <ion-input type="number" label="Valor anual" fill="outline" color="success"></ion-input>
+
+  <ion-datetime></ion-datetime>
 </ion-content>
