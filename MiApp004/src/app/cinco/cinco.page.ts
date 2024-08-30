@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-cinco',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cinco.page.scss'],
 })
 export class CincoPage implements OnInit {
-
-  constructor() { }
+  boton = ['Aceptar'];
+  constructor(private alertController: AlertController) { }
 
   ngOnInit() {
   }
+  async funcionAlerta()
+  {
+    const alert = await this.alertController.create({
+        header    : "Alerta",
+        subHeader : "Mensaje de alerta",
+        message   :"Esto es un mensaje de ejemplo",
+        buttons   : ["Ok"]
+    });
+    alert.present();
+  }
+
 
 }
