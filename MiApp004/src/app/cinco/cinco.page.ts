@@ -8,7 +8,15 @@ import { AlertController } from '@ionic/angular';
 })
 export class CincoPage implements OnInit {
   boton = ['Aceptar'];
-  constructor(private alertController: AlertController) { }
+
+  numero: number;
+  numero2: number = 100;
+
+
+
+  constructor(private alertController: AlertController) {
+    this.numero = 0;
+   }
 
   ngOnInit() {
   }
@@ -22,6 +30,13 @@ export class CincoPage implements OnInit {
     });
     alert.present();
   }
-
+  incrementar()
+  {
+    this.numero++;
+  }
+  decrementar()
+  {
+    this.numero--;
+  }
 
 }

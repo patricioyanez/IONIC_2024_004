@@ -35,6 +35,10 @@ const routes: Routes = [
     path: 'cinco',
     loadChildren: () => import('./cinco/cinco.module').then( m => m.CincoPageModule)
   },
+  {
+    path: 'seis',
+    loadChildren: () => import('./seis/seis.module').then( m => m.SeisPageModule)
+  },
 ];
 
 @NgModule({

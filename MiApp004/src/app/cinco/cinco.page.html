@@ -20,6 +20,21 @@
     Ver alerta
   </ion-button>
 
+  <br><br><br>
+  <ion-label>El valor del numero es: {{ numero }}</ion-label>
+
+  <br><br><br>
+  <ion-label>El valor del numero2 es: {{ numero2 }}</ion-label>
+
+  <br><br>
+  <ion-button (click)="incrementar()">
+    <ion-icon slot="start" name="add"></ion-icon>
+    incrementar
+  </ion-button>
+  <ion-button (click)="decrementar()" color="danger">
+    <ion-icon slot="start" name="remove"></ion-icon>
+    incrementar
+  </ion-button>
 </ion-content>
 
 <ion-footer>
