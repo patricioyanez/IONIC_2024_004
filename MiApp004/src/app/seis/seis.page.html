@@ -35,9 +35,29 @@
         </ion-button>
       </ion-col>
     </ion-row>
-
   </ion-grid>
 
+  <br><br><br>
+  <ion-button (click)="mostrar()">
+    <ion-icon slot="icon-only" name="eye"></ion-icon>
+    <!-- Ejercicio 8: agregar boton ojo cerrado de acuerdo si se ve o no la tabla -->
+  </ion-button>
+
+  <ion-text color="primary" *ngIf="permitir">
+
+    <h1>Lista de asignaturas</h1>
+    <ion-list>
+      <ion-item *ngFor="let asignatura of asignaturas">
+        <ion-label>{{ asignatura.nombre | uppercase }}</ion-label> <!-- lowercase -->
+        <!-- Ejercicio: Mostrar solo las 3 primeras letras de la sigla -->
+        <ion-label>{{ asignatura.nombre | uppercase | slice:0:3 }}</ion-label>
+        <ion-label>{{ asignatura.nombre.substring(0,3).toUpperCase() }}</ion-label>
+        <!-- Ejercicio: Usando pipe, redondear la nota -->
+        <ion-label>{{ asignatura.nota | number:'1.0-0'  }}</ion-label>
+      </ion-item>
+    </ion-list>
+
+  </ion-text>
 </ion-content>
 
 <ion-footer>

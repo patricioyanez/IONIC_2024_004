@@ -9,11 +9,11 @@ export class SeisPage implements OnInit {
   nombre:string;
   edad: number;
   mensaje :string = "Usuario VIP";
-  
+  permitir : boolean = false;
   asignaturas = [
     {nombre: "DSY1101", nota : 49.5},
     {nombre: "PGY4101", nota : 50},
-    {nombre: "MDY4101", nota : 40},
+    {nombre: "mdy4101", nota : 40},
   ];
 
   constructor() { 
@@ -25,5 +25,8 @@ export class SeisPage implements OnInit {
 
   ngOnInit() {
   }
-
+  mostrar()
+  {
+    this.permitir = !this.permitir;
+  }
 }
