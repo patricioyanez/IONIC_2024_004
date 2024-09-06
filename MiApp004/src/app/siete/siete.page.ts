@@ -20,4 +20,8 @@ export class SietePage implements OnInit {
   ngOnInit() {
   }
 
+  sumar()
+  {
+    this.resultado = this.n1 +this.n2;
+  }
 }

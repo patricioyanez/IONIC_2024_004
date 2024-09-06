@@ -33,6 +33,12 @@
     <ion-label>Numero 2:</ion-label><input type="number" [(ngModel)]="n2">
   </ion-item>
 
+  <ion-button (click)="sumar()">
+    <ion-icon slot="icon-only" name="add"></ion-icon>
+  </ion-button>
+  <ion-text color="success">
+    <h1>El resultado es: {{ resultado }}</h1>
+  </ion-text>
 
 </ion-content>
 
