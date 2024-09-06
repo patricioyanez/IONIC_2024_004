@@ -43,6 +43,10 @@ const routes: Routes = [
     path: 'siete',
     loadChildren: () => import('./siete/siete.module').then( m => m.SietePageModule)
   },
+  {
+    path: 'ejercicio-promedio',
+    loadChildren: () => import('./ejercicio-promedio/ejercicio-promedio.module').then( m => m.EjercicioPromedioPageModule)
+  },
 ];
 
 @NgModule({
