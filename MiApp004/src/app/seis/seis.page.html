@@ -39,7 +39,8 @@
 
   <br><br><br>
   <ion-button (click)="mostrar()">
-    <ion-icon slot="icon-only" name="eye"></ion-icon>
+    <ion-icon slot="icon-only" name="eye"     *ngIf="!permitir"></ion-icon>
+    <ion-icon slot="icon-only" name="eye-off" *ngIf="permitir"></ion-icon>
     <!-- Ejercicio 8: agregar boton ojo cerrado de acuerdo si se ve o no la tabla -->
   </ion-button>
 

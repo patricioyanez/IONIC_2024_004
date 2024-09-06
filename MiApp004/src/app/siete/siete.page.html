@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>siete</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="menu"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-text color="primary">
+    <h1>Directiva Unidireccional</h1>
+    <input type="text" [ngModel]="nombre">
+  </ion-text>
+  <ion-text color="primary">
+    <h1>{{ nombre }}</h1>
+  </ion-text>
+
+  <ion-text color="primary">
+    <h1>Directiva Bidireccional</h1>
+    <input type="text" [(ngModel)]="primerApellido">
+  </ion-text>
+  <ion-text color="primary">
+    <h1>{{ primerApellido }}</h1>
+  </ion-text>
+
+  <h1>Calculadora</h1>
+  <ion-item>
+    <ion-label>Numero 1:</ion-label><input type="number" [(ngModel)]="n1">
+  </ion-item>
+  <ion-item>
+    <ion-label>Numero 2:</ion-label><input type="number" [(ngModel)]="n2">
+  </ion-item>
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Directivas y Toast</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="menu"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
