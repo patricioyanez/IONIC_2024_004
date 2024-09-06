@@ -36,6 +36,15 @@
   <ion-button (click)="sumar()">
     <ion-icon slot="icon-only" name="add"></ion-icon>
   </ion-button>
+  <ion-button (click)="restar()">
+    <ion-icon slot="icon-only" name="remove"></ion-icon>
+  </ion-button>
+  <ion-button (click)="multiplicar()">
+    <ion-icon slot="icon-only" name="close"></ion-icon>
+  </ion-button>  
+  <ion-button (click)="dividir()">
+    <ion-icon slot="icon-only"></ion-icon>/
+  </ion-button>
   <ion-text color="success" *ngIf="resultado">
     <h1>El resultado es: {{ resultado }}</h1>
   </ion-text>

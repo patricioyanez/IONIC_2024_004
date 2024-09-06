@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-siete',
@@ -10,10 +11,10 @@ export class SietePage implements OnInit {
   nombre = 'Ana';
   primerApellido : string;
 
-  n1 = ''
+  n1 = '';
   n2 = '';
-  resultado : any =''
-  constructor() { 
+  resultado : any ='';
+  constructor(private toastController:ToastController) { 
     this.primerApellido = 'Díaz';
   }
 
@@ -22,6 +23,29 @@ export class SietePage implements OnInit {
 
   sumar()
   {
-    this.resultado = this.n1 +this.n2;
+    this.resultado = this.n1 + this.n2;
+  }
+  restar()
+  {
+    this.resultado = Number(this.n1) - Number(this.n2);
+  }
+  multiplicar()
+  {
+    this.resultado = Number(this.n1) * Number(this.n2);
+  }
+  async dividir()
+  {
+    if(Number(this.n2) == 0)
+    {// toast
+      const toast = await this.toastController.create({
+        message : "No se puede dividir por cero",
+        duration: 2000,
+        position: 'middle', // top bottom
+        color   : 'danger'
+      });
+      await toast.present();
+      return;
+    }
+    this.resultado = Number(this.n1) / Number(this.n2);
   }
 }
