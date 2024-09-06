@@ -49,3 +49,9 @@ export class SietePage implements OnInit {
     this.resultado = Number(this.n1) / Number(this.n2);
   }
 }
+
+
+  // Ejercicio 9:
+  // crear una nueva pagina que permita calculador el promedio de 3 notas,
+  // mostrar si aprobó o no, según resultado obtenido.
+  // usar alert si reprueba y toast si aprueba.
