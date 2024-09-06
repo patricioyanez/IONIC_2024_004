@@ -36,7 +36,7 @@
   <ion-button (click)="sumar()">
     <ion-icon slot="icon-only" name="add"></ion-icon>
   </ion-button>
-  <ion-text color="success">
+  <ion-text color="success" *ngIf="resultado">
     <h1>El resultado es: {{ resultado }}</h1>
   </ion-text>
 
