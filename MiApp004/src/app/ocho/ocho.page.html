@@ -8,19 +8,22 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
+  <ion-label>Nota 1:</ion-label><input type="number" [(ngModel)]="n1"><br>
+  <ion-label>Nota 2:</ion-label><input type="number" [(ngModel)]="n2"><br>
+  <ion-label>Nota 3:</ion-label><input type="number" [(ngModel)]="n3"><br>
+  
 <ion-fab vertical="bottom" horizontal="end" slot="fixed">
   <ion-fab-button><ion-icon name="code"></ion-icon></ion-fab-button>
   <ion-fab-list side="top">
-    <ion-fab-button><ion-icon name="logo-ionic"></ion-icon></ion-fab-button>
-    <ion-fab-button><ion-icon name="logo-angular"></ion-icon></ion-fab-button>
-    <ion-fab-button><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
-    <ion-fab-button><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+    <ion-fab-button href="https://ionic.io"><ion-icon name="logo-ionic"></ion-icon></ion-fab-button>
+    <ion-fab-button href="https://angular.dev"><ion-icon name="logo-angular"></ion-icon></ion-fab-button>
+    <ion-fab-button href="https://facebook.cl"><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+    <ion-fab-button href="https://instagram.com"><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
     <ion-fab-button href="https://google.cl"><ion-icon name="logo-google"></ion-icon></ion-fab-button>
   </ion-fab-list>
   <ion-fab-list side="start">
-    <ion-fab-button><ion-icon name="logo-ionic"></ion-icon></ion-fab-button>
-    <ion-fab-button><ion-icon name="logo-angular"></ion-icon></ion-fab-button>
+    <ion-fab-button href="menu"><ion-icon name="menu"></ion-icon></ion-fab-button>
+    <ion-fab-button (click)="promediar()"><ion-icon name="calculator"></ion-icon></ion-fab-button>
   </ion-fab-list>
 </ion-fab>
 
