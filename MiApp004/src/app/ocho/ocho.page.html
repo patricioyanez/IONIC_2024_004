@@ -11,7 +11,7 @@
   <ion-label>Nota 1:</ion-label><input type="number" [(ngModel)]="n1"><br>
   <ion-label>Nota 2:</ion-label><input type="number" [(ngModel)]="n2"><br>
   <ion-label>Nota 3:</ion-label><input type="number" [(ngModel)]="n3"><br>
-  
+
 <ion-fab vertical="bottom" horizontal="end" slot="fixed">
   <ion-fab-button><ion-icon name="code"></ion-icon></ion-fab-button>
   <ion-fab-list side="top">
@@ -26,5 +26,27 @@
     <ion-fab-button (click)="promediar()"><ion-icon name="calculator"></ion-icon></ion-fab-button>
   </ion-fab-list>
 </ion-fab>
+<ion-button (click)="verModal()" expand="block" fill="outline" shape="round">
+  Ver modal
+</ion-button>
+  <ion-modal [isOpen]="mostrar">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Ventana Modal</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="verModal()">
+              <ion-icon slot="start" name="forward"></ion-icon>
+              Volver
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <p>Ejemplo de una ventana modal</p>
+      </ion-content>
+
+    </ng-template>
+  </ion-modal>
 
 </ion-content>

@@ -11,6 +11,7 @@ export class OchoPage implements OnInit {
   n2 = '';
   n3 = '';
   resultado : any ='';
+  mostrar : boolean = false;
   constructor(private toastController:ToastController) { }
 
   ngOnInit() {
@@ -31,7 +32,17 @@ export class OchoPage implements OnInit {
     }
     else
     {
-
+      const toast = await this.toastController.create({
+        message : 'Ud Aprobó con nota ' + this.resultado,
+        duration: 3000,
+        position: 'middle',
+        color   : 'primary'
+      });
+      await toast.present();
     }
+  }
+  verModal()
+  {
+    this.mostrar = !this.mostrar;
   }
 }
