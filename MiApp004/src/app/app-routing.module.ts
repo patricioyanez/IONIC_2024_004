@@ -51,6 +51,10 @@ const routes: Routes = [
     path: 'ocho',
     loadChildren: () => import('./ocho/ocho.module').then( m => m.OchoPageModule)
   },
+  {
+    path: 'nueve',
+    loadChildren: () => import('./nueve/nueve.module').then( m => m.NuevePageModule)
+  },
 ];
 
 @NgModule({
