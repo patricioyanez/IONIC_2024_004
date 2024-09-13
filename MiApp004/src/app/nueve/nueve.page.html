@@ -1,4 +1,4 @@
-<ion-menu contentId="menu-content" menuId="menu-content" side="start" type="overlay">
+<ion-menu contentId="menu-content" menuId="menu-content" side="end" type="overlay">
   <ion-header>
     <ion-toolbar>
       <ion-title>Opciones</ion-title>
@@ -9,8 +9,30 @@
       <ion-icon name="book" slot="start"></ion-icon>
       <ion-label>Página 1</ion-label>
     </ion-item>
+    <ion-item routerLink="/menu">
+      <ion-icon name="menu" slot="start"></ion-icon>
+      <ion-label>Menú</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-menu-toggle>
+        <ion-button>
+          <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+          Cerrar
+        </ion-button>
+      </ion-menu-toggle>
+      
+    </ion-item>
     <!-- Ejercicio 25: Agregar link para las demas paginas del proyecto  -->
   </ion-content>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-menu-toggle slot="end">
+        <ion-button>Cerrar
+          <ion-icon slot="end" name="arrow-undo-outline" expand="block"></ion-icon>
+        </ion-button>
+      </ion-menu-toggle>
+    </ion-toolbar>
+  </ion-footer>
 </ion-menu>
 
 <div class="ion-page" id="menu-content">
