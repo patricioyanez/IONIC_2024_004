@@ -16,4 +16,18 @@ export class HomePage {
       this.router.navigate(['/segunda']);
     }
   }
+  // error lens
+  abrirPagina2()
+  {
+    if(this.numero1 > 0)
+    {
+      this.router.navigateByUrl('segunda');
+    }
+  }abrirPagina3()
+  {
+    if(this.numero1 > 0)
+    {
+      this.router.navigate(['/segunda', {num: this.numero1} ]);
+    }
+  }
 }
