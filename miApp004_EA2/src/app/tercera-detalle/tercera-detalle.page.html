@@ -23,4 +23,16 @@
 <!-- ejercicio 17: agregar 2 botones x o ❤ y enviar mensaje con
  toast y alertController
   -->
+  <ion-row>
+    <ion-col size="6">
+      <ion-button (click)="no()" color="secondary" expand="block">
+        <ion-icon slot="icon-only" name="close-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+    <ion-col size="6">
+      <ion-button (click)="si()" color="danger" expand="block">
+        <ion-icon slot="icon-only" name="heart-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
 </ion-content>
