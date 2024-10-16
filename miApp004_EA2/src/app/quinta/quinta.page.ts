@@ -33,6 +33,12 @@ export class QuintaPage implements OnInit {
   Ejercicio 23: Agregar el boton eliminar
 
   */
+
+  async eliminar()
+  {
+    this.crudService.eliminar(this.persona.rut);
+    this.limpiar();
+  }
    /*
   Ejercicio 24: Listar todos los elementos guardados en el
   storage

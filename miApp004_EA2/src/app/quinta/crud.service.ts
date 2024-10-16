@@ -24,6 +24,11 @@ export class CrudService {
   }
   async listar()
   {
-    
+    let listado: any =[];
+    for(let i = 0; i< localStorage.length; i++)
+    {
+      listado[i] = JSON.parse(""+localStorage.getItem(""+localStorage.key(i)));
+    }
+    return listado;
   }
 }
