@@ -18,13 +18,13 @@ export class QuintaPage implements OnInit {
     this.crudService.guardar(this.persona.rut, this.persona);
     this.limpiar();
   }
-  async leer()
-  {
     /*
   Ejercicio 25: enviar mensaje toast o alert en caso de que el rut no exista en el 
   localstorage 
 
   */
+  async leer()
+  {
     this.persona = await this.crudService.leer(this.persona.rut);
   }
   limpiar()
