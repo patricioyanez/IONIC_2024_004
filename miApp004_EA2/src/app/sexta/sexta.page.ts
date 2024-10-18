@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApirestService } from './apirest.service';
 
 @Component({
   selector: 'app-sexta',
@@ -6,10 +7,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sexta.page.scss'],
 })
 export class SextaPage implements OnInit {
-
-  constructor() { }
+  listado : any = []; 
+  constructor(private apirestService:ApirestService) { }
 
   ngOnInit() {
+    this.listar();
   }
+    /* Ejercicio 26: mostrar la información de los 
+    usuarios en la pagina sexta  
+  nombre y nombre de usuario.
+  list e Item
+*/
+  async listar()
+  {
+    this.listado = await this.apirestService.getUsers();
+  }
+ /*
+    Ejercicio 27: Desplegar los post 
+    del usuario seleccionado (sextapost)
+  */
 
 }
