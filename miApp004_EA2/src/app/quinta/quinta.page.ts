@@ -54,4 +54,17 @@ export class QuintaPage implements OnInit {
   {
     this.personas = await this.crudService.listar();
   }
+  /*
+ Ejercicio 25: Agregar un evento click a la lista de usuario y cargar la info en el 
+ formulario
+ */
+
+ async leer2(id:string)
+ {
+   this.persona = await this.crudService.leer(id);
+ }
+ async leer3(persona:any)
+ {
+   this.persona = persona;
+ }
 }
