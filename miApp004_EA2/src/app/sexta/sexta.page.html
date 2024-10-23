@@ -6,7 +6,7 @@
 
 <ion-content [fullscreen]="true">
 <ion-list>
-  <ion-item *ngFor="let usuario of listado">
+  <ion-item *ngFor="let usuario of listado" [routerLink]="['/sextaposts/' + usuario.id]">
     <ion-label>{{usuario.name}}</ion-label>
     <ion-label>{{usuario.username}}</ion-label>
   </ion-item>

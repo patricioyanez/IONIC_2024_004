@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>sextaposts</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="sexta"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-card *ngFor="let post of listado">
+  <ion-card-header>
+    <ion-card-subtitle>id: {{post.id}}</ion-card-subtitle>
+    <ion-card-title>{{post.title}}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    {{post.body}}
+  </ion-card-content>
+</ion-card>
+</ion-content>
