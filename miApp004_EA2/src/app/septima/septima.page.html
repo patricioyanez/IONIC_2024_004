@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>septima</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<!-- ver septima.module -->
+ <input type="text" [(ngModel)]="valor">
+ <br>
+ <qrcode [qrdata]="valor" [width]="350"></qrcode>
+</ion-content>
