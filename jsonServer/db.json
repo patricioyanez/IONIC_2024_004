@@ -1,0 +1,45 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nombre": "Ana",
+      "correo": "an@correo.cl",
+      "clave": "1234"
+    },
+    {
+      "id": "2",
+      "nombre": "luis",
+      "correo": "lu@correo.cl",
+      "clave": "1234"
+    },
+    {
+      "id": "3",
+      "nombre": "pedro",
+      "correo": "pe@correo.cl",
+      "clave": "1234"
+    },
+    {
+      "id": "4",
+      "nombre": "diana",
+      "correo": "di@correo.cl",
+      "clave": "1234"
+    }
+  ],
+  "sedes": [
+    {
+      "id": "1",
+      "nombre": "Plaza Oeste",
+      "habilitado": "1"
+    },
+    {
+      "id": "2",
+      "nombre": "Plaza Norte",
+      "habilitado": "1"
+    },
+    {
+      "id": "3",
+      "nombre": "Plaza Vespucio",
+      "habilitado": "1"
+    }
+  ]
+}
