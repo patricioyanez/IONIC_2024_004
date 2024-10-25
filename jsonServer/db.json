@@ -40,6 +40,16 @@
       "id": "3",
       "nombre": "Plaza Vespucio",
       "habilitado": "1"
+    },
+    {
+      "id": "5",
+      "nombre": "Nueva sede",
+      "habilitado": "1"
+    },
+    {
+      "id": "6",
+      "nombre": "Nueva sede 2",
+      "habilitado": "0"
     }
   ]
 }
