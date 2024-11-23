@@ -32,8 +32,8 @@ describe('=== Formulario Calculadora:', () => {
     expect(valor).toEqual("8")
   }));
 
-  /*
-Ejercicio 45:
-  Crear boton para -,/ y * y aplicar pruebas e2e
+/*
+  Ejercicio 45:
+    Crear boton para -,/ y * y aplicar pruebas e2e
 */
 });
